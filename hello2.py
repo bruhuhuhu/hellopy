@@ -19,10 +19,18 @@ displayInventory(stuff)
 def addToInventory(inventory, addedItems):
     # your code goes here
     for i in range (len(addedItems)):
-        inventory.setdefault(addedItems[i],0)
+        inventory.setdefault(addedItems[i],0) #set default is used to add default key value pairs
         inventory[addedItems[i]]=inventory[addedItems[i]]+1
 
 inv = {'gold coin': 42, 'rope': 1}
 dragonLoot = ['gold coin', 'dagger', 'gold coin', 'gold coin', 'ruby']
 addToInventory(inv, dragonLoot)
 displayInventory(inv)
+
+print (inv)
+print ("the nummber of ropes in the inventory is " + str(inv.get("rope",0))) #dict.get will get function looks for the key and find corresponding value
+
+emptyDict = {}
+print (emptyDict)
+emptyDict["first_item"] = "i am the first item"
+print (emptyDict)
