@@ -1,4 +1,4 @@
-#learning log from chapter 4 onwards of automate boring things with python
+#learning log from chapter 4
 
 animals = [ "dogs" , "cats" , "red pandas"]
 
