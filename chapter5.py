@@ -33,4 +33,4 @@ print ("the nummber of ropes in the inventory is " + str(inv.get("rope",0))) #di
 emptyDict = {}
 print (emptyDict)
 emptyDict["first_item"] = "i am the first item"
-print (emptyDict)
+print (emptyDict) #adding new item into the dictionary
